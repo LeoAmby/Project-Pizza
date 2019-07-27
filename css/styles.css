@@ -16,11 +16,21 @@ body {
 
 .jumbotron {
     background-color: rgb(255, 196, 0);
-    /* height:250px; */
+    height:273px;
 }
 
 h1 {
     font-family: 'Nosifer', cursive;
     text-shadow: 3px 3px 5px black;
-    font-size: 70px;
+    font-size: 80px;
+}
+
+
+ .container   {
+    height:50px;
+    width: 50%;
+    background-color:black;
+    vertical-align: bottom;
+    margin:0px;outline:none;
+    align-content: center;
 }
