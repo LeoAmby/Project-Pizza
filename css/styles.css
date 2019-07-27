@@ -1,5 +1,6 @@
 body {
     color:rgb(196, 7, 7);
+    /* background-color: black; */
 }
 
 
@@ -17,18 +18,19 @@ body {
 .jumbotron {
     background-color: rgb(255, 196, 0);
     height:273px;
+    opacity: 0.5%;
+    
 }
 
 h1 {
     font-family: 'Nosifer', cursive;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: 3px 5px 8px black;
     font-size: 80px;
 }
 
 
- .container   {
-    height:50px;
-    width: 50%;
+ .navbar   {
+    height:60px;
     background-color:black;
     vertical-align: bottom;
     margin:0px;outline:none;
