@@ -17,6 +17,11 @@ body {
     background-color: rgb(238, 168, 3);
     height:273px;   
 }
+#slices img{
+    top:0;
+    position: absolute;
+    box-shadow: 0 0 8px 8px rgb(238, 168, 3) inset height="200px";
+}
 
 h1 {
     font-family: 'Nosifer', cursive;
@@ -49,8 +54,12 @@ li {
     color:red;
 }
 #slides {
-    background-color:white;
+    /* background-color:white; */
+    position: relative;
+    top:0;
+    transform: scaleX();
 }
+
 h2    {
     text-align:center;
 }
