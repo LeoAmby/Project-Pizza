@@ -57,6 +57,20 @@ h3 {
     text-align: center;
     color: black;
 }
+#prices {
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    align-content: center;
+    width:230px;
+    bottom: 20px;
+    background-color:#000000ab;
+    color: white;
+    padding-left: 20px;
+  
+ 
+  }
 #Pizza {
     border-radius: 20px;
 }
