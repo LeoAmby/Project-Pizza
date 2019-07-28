@@ -156,12 +156,35 @@
                                           </div>
                                         </div>
                                       </fieldset>
-                                  <div class="form-group row">
-                                      <label for="inputYear" class="col-sm-2 col-form-label">Year</label>
-                                      <div class="col-sm-10">
-                                        <input type="number" class="form-control" id="year" placeholder="Year of Birth">
-                                      </div>
-                                    </div>
+                                      <fieldset class="form-group">
+                                            <div class="row">
+                                              <legend class="col-form-label col-sm-2 pt-0">Service</legend>
+                                              <div class="col-sm-10">
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="gridRadios" id="Delivery" value="option1" checked>
+                                                  <label class="form-check-label" for="gridRadios1">
+                                                    Delivery
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="gridRadios" id="Pick-Up" value="option2">
+                                                  <label class="form-check-label" for="gridRadios2">
+                                                    Pick-Up
+                                                  </label>
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+                                          </fieldset>
+                                          <div class="form-inline">
+                                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Location</label>
+                                                <select class="custom-select my-1 mr-md-8" id="inlineFormCustomSelectPref">
+                                                  <option selected>Choose...</option>
+                                                  <option value="1">Within Nairobi</option>
+                                                  <option value="2">Nairobi Outcasts</option>
+                                                  
+                                                </select>
+                                            </div>
                                   
                                  
                                   <div class="form-group row">
