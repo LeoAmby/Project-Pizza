@@ -1,4 +1,4 @@
-# ORDER PIZZA WEB-APP
+## ORDER PIZZA WEB-APP
 
 ## AUTHOR 
    Leonidah Mwamto
@@ -26,9 +26,9 @@
     + Information required includes, the type of crust, the flavor, size, location if they need it delivered, the number of orders and name of client.
     + On submition of the form the client is able to see a confirmation message indicating their order preference.
 
-## Installations
+## INSTALLATIONS
     To have this web app in your files, clone it from my github directory named project-pizza. Unzip the files within a folder suitable to you and use it as pleased.
 
-## Licence
+## LICENCE
     MIT
     (https://choosealicense.com/licenses/mit/)
