@@ -37,9 +37,13 @@ li {
     display: inline-block;
 }
 #navbarNav>ul>li>a:hover        {
-            color: black;
+            color: white;
             text-decoration: none;
 }
+.navbar {
+    background-color: black;
+}
+
 
 .nav-item>li>a {
     color:red;
@@ -65,12 +69,16 @@ h3 {
     align-content: center;
     width:230px;
     bottom: 20px;
-    background-color:#000000ab;
+    background-color:#00000066;
     color: white;
     padding-left: 20px;
   
  
   }
+#prices img {
+    border-radius:10px;
+    border: 1px solid gray;
+}
 #Pizza {
     border-radius: 20px;
 }
