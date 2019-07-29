@@ -12,9 +12,10 @@
 // }
 //user logic
 $(document).ready(function(){
-    $("form#placeOrder").submit(function(event) {
+    $("form#placeOrder").submit(function(event)     {
         event.preventDefault();
-
+        
+        var name = $("#yourName").val();
         var pizzaSize   = $("#size").val();
         var pizzaFlavor = $("#flavors").val();
         var pizzaNumber = $("#numberOfPizza").val();
@@ -32,7 +33,7 @@ $(document).ready(function(){
             toppingsPrice = 200;
         } else if (pizzaSize === 'medium'){
             toppingsPrice = 150;
-        } else (pizzaSize === 'small'){
+        } else if (pizzaSize === 'small'){
             toppingsPrice = 100;
         }
 
@@ -70,7 +71,7 @@ $(document).ready(function(){
             sizePrice = 1000;
         } else if (pizzaSize == 'medium'){
             sizePrice = 800;
-        } else  (pizzaSize == 'large'){
+        } else if (pizzaSize == 'large'){
             sizePrice = 550;
         }
 
@@ -81,12 +82,15 @@ $(document).ready(function(){
             deliveryPrice = 500;
         }else deliveryPrice = 0;
   
- 
-var cost;
-function totalCost(){
-    var cost = ('sizePrice' + 'crustPrice' + 'toppingsPrice' + 'delivery')
+        var noOfPizza = document.getElementById('numberOfPizza').value;
 
-}
+ 
+    var cost= 0;
+    function totalCost(){
+        cost = (sizePrice + crustPrice + toppingsPrice + deliveryPrice)*noOfPizza;
+    }
+    totalCost();
+    alert("Thank you "+ name + " for your order." + " You have ordered " +pizzaNumber +" " + pizzaSize +" "+ pizzaFlavor +" pizza with a "+ pizzaCrust + " crust and your total cost is " + cost );
     })
 })
 //business logic
