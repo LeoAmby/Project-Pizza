@@ -5,6 +5,7 @@ var fields = {
     Number = "numberOfPizzas",
     Crust = ["crispy", "stuffed", "gluttenFree"],
     Service =["delivery", "pick-up"],
-    Delivery = ["within Nairobi", "Nairobi Outcasts"]
+    Delivery = ["within Nairobi", "Nairobi Outcasts"],
+    Prices = [1200, 1000, 800, 550]
 
 }
