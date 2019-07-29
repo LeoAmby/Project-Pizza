@@ -64,7 +64,7 @@ h2    {
     text-align:center;
 }
 h3 {
-    background-color: rgb(238, 168, 3);
+    background-color:gray;
     border-radius:5px;
     padding:3px;
     text-align: center;
@@ -103,4 +103,7 @@ span {
 
 form, p {
     padding-top: 20px;
+}
+#button {
+    padding-left:40px;
 }

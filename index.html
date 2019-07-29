@@ -44,7 +44,7 @@
                     <h1>PIZZ<img src="images/logo.png" height="120px"> RELA</h1>
                 </div> 
                 <div class="col-md-4" id="slides">
-                    <img src="images/vege.jpg" height="200px">
+                    <!-- <img src="images/vege.jpg" height="200px"> -->
                     
 
                 </div> 
@@ -78,7 +78,7 @@
                                   </div>
                         </div>
                         <div class="col-md-3">
-                                <img src="images/supreme.jpg" width="230px" height="200">
+                                <img src="images/+drinks.jpg" width="230px" height="200">
                                 <div class="text-block"> 
                                         <h4>SMALL</h4>
                                         <p>Ksh. 550 <br>
@@ -90,6 +90,140 @@
         <div class="container">
           
             <div class="row">
+                <div class="col-md-6" id="order">
+                    <h3>Place Your Order</h3>
+                      <form id="placeOrder">
+                              <div class="form-group row">
+                                      <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="yourName" placeholder="Your full Names" required>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="inputPhone" class="col-sm-2 col-form-label" required>Phone Number</label>
+                                      <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="phoneNumber" placeholder="+254" required>
+                                      </div>
+                                    </div>
+                                    <div class="form-inline">
+                                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pizza Size</label>
+                                        <select class="custom-select my-1 mr-md-8" id="size">
+                                          <option selected>Choose...</option>
+                                          <option value="mega">Mega</option>
+                                          <option value="large">Large</option>
+                                          <option value="medium">Medium</option>
+                                          <option value="small">Small</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-inline">
+                                          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pizza Flavor</label>
+                                          <select class="custom-select my-1 mr-md-8" id="flavors">
+                                            <option selected>Choose...</option>
+                                            <option value="hawaiian">Hawaiian</option>
+                                            <option value="magheritta">Magheritta</option>
+                                            <option value="vege-Tikka">Vege Tikka</option>
+                                            <option value="peri-chicken">Peri-Peri Chicken</option>
+                                            <option value="steak">BBQ-Steak</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="mushroom">Mushroom Tikka</option>
+                                            <option value="bbq-chicken">BBQ-Chicken</option>
+                                          </select>
+                                      </div>
+                                    <div class="form-group row">
+                                      <label for="inputNumber" class="col-sm-2 col-form-label">No. of Pizzas</label>
+                                      <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="numberOfPizza" placeholder="How Many pizzas?" required>
+                                      </div>
+                                    </div>
+                                    <fieldset class="form-group" id="Crust">
+                                          <div class="row">
+                                            <legend class="col-form-label col-sm-2 pt-0">Crust</legend>
+                                            <div class="col-sm-10">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="crispy" value="crispy" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                  Crispy
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="stuffed" value="stuffed">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                  Stuffed
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gluttenFree" value="glutten-free">
+                                                <label class="form-check-label" for="gridRadios3">
+                                                  Glutten Free
+                                                </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+  
+                                    <div class="form-group row">
+                                      <label for="toppings" class="col-sm-2 col-form-label">Toppings</label>
+                                      <div class="col-sm-10">
+                                          <input type="checkbox" name="toppings" value="ham"> Ham
+                                          <input type="checkbox" name="toppings" value="bell-peppers"> Bell-Peppers
+                                          <input type="checkbox" name="toppings" value="pineapples"> Pineapple 
+                                          <input type="checkbox" name="toppings" value="Chicken"> Chicken<br>
+                                          <input type="checkbox" name="toppings" value="Steak"> Steak
+                                          <input type="checkbox" name="toppings" value="pineapples"> Pineapple 
+                                          <input type="checkbox" name="toppings" value="Cherry"> Cherry Tomatoes<br>
+                                          <input type="checkbox" name="toppings" value="Sausages"> Sausages
+                                          <input type="checkbox" name="toppings" value="Olives"> Black Olives 
+                                          <input type="checkbox" name="toppings" value="Brocoli"> Brocoli<br>
+                                          <input type="checkbox" name="toppings" value="Cauli"> Cauliflower
+                                          <input type="checkbox" name="toppings" value="Mushroom"> Mushroom 
+                                          <input type="checkbox" name="toppings" value="Onions"> Caramell Onions<br>
+                                          <input type="checkbox" name="toppings" value="Cheese"> Extra Cheese
+                                          <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni 
+                                      </div>
+                                    </div>
+  
+                                          
+                                          
+                                        <fieldset class="form-group" id="services">
+                                              <div class="row">
+                                                <legend class="col-form-label col-sm-2 pt-0">Service</legend>
+                                                <div class="col-sm-10">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="Radios" id="Delivery" value="Delivery" checked>
+                                                    <label class="form-check-label" for="RadiosA">
+                                                      Delivery
+                                                    </label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="Radios" id="Pick-Up" value="Pick-Up">
+                                                    <label class="form-check-label" for="RadiosB">
+                                                      Pick-Up
+                                                    </label>
+                                                  </div>
+                                                  
+                                                </div>
+                                              </div>
+                                            </fieldset>
+                                            <div class="form-inline">
+                                                  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Location</label>
+                                                  <select class="custom-select my-1 mr-md-8" id="location">
+                                                    <option selected>Choose...</option>
+                                                    <option value="withinNairobi">Within Nairobi</option>
+                                                    <option value="nairobiOutcasts">Nairobi Outcasts</option>
+                                                    
+                                                  </select>
+                                              </div>
+                                    
+                                   
+                                    <div class="form-group row">
+                                      <div class="col-sm-10">
+                                        <button type="submit" id= "button" class="btn btn-primary" onclick="">Submit</button>
+                  
+                                      </div>
+                                    </div>
+  
+                      </form>
+                  </div>
                 <div class="col-md-6">
                     <h3>More Info</h3>
                     <p>Our Prices apply to every type of pizza. The size is the key determinant of the charges applied. 
@@ -98,153 +232,46 @@
                     </p>
                     <p>Our Toppings: <span>Chicken pieces, grilled steak slices, mushroom, brocoli, ham, bacon, bell-peppers, pineapple, cherry-tomatoes,<br>
                         caramell onions</span> 
-                    <table>
-                      <th>
-                       CRUST TYPE
-                      </th>
-                      <tr>
-                        <td>Mega</td>
-                        <td>Large</td>
-                        <td>Medium</td>
-                        <td>Small</td>
-                      </tr>
-                    </table>
-                    
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">MEGA</th>
+                                <th scope="col">LARGE</th>
+                                <th scope="col">MEDIUM</th>
+                                <th scope="col">SMALL</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">CRISPY</th>
+                                <td>250</td>
+                                <td>200</td>
+                                <td>150</td>
+                                <td>100</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">STUFFED</th>
+                                <td>400</td>
+                                <td>350</td>
+                                <td>300</td>
+                                <td>250</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">GLUTTEN-FREE</th>
+                                <td>300</td>
+                                <td>250</td>
+                                <td>200</td>
+                                <td>150</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </p>
-                </div>
-                <div class="col-md-5" id="order">
-                  <h3>Place Your Order</h3>
-                    <form id="placeOrder">
-                            <div class="form-group row">
-                                    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" class="form-control" id="yourName" placeholder="Your full Names" required>
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="inputPhone" class="col-sm-2 col-form-label" required>Phone Number</label>
-                                    <div class="col-sm-10">
-                                      <input type="number" class="form-control" id="phoneNumber" placeholder="+254" required>
-                                    </div>
-                                  </div>
-                                  <div class="form-inline">
-                                      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pizza Size</label>
-                                      <select class="custom-select my-1 mr-md-8" id="size">
-                                        <option selected>Choose...</option>
-                                        <option value="mega">Mega</option>
-                                        <option value="large">Large</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="small">Small</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-inline">
-                                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pizza Flavor</label>
-                                        <select class="custom-select my-1 mr-md-8" id="flavors">
-                                          <option selected>Choose...</option>
-                                          <option value="hawaiian">Hawaiian</option>
-                                          <option value="magheritta">Magheritta</option>
-                                          <option value="vege-Tikka">Vege Tikka</option>
-                                          <option value="peri-chicken">Peri-Peri Chicken</option>
-                                          <option value="steak">BBQ-Steak</option>
-                                          <option value="pepperoni">Pepperoni</option>
-                                          <option value="mushroom">Mushroom Tikka</option>
-                                          <option value="bbq-chicken">BBQ-Chicken</option>
-                                        </select>
-                                    </div>
-                                  <div class="form-group row">
-                                    <label for="inputNumber" class="col-sm-2 col-form-label">No. of Pizzas</label>
-                                    <div class="col-sm-10">
-                                      <input type="number" class="form-control" id="numberOfPizza" placeholder="How Many pizzas?" required>
-                                    </div>
-                                  </div>
-                                  <fieldset class="form-group" id="Crust">
-                                        <div class="row">
-                                          <legend class="col-form-label col-sm-2 pt-0">Crust</legend>
-                                          <div class="col-sm-10">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="gridRadios" id="crispy" value="crispy" checked>
-                                              <label class="form-check-label" for="gridRadios1">
-                                                Crispy
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="gridRadios" id="stuffed" value="stuffed">
-                                              <label class="form-check-label" for="gridRadios2">
-                                                Stuffed
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="gridRadios" id="gluttenFree" value="glutten-free">
-                                              <label class="form-check-label" for="gridRadios3">
-                                                Glutten Free
-                                              </label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </fieldset>
-
-                                  <div class="form-group row">
-                                    <label for="toppings" class="col-sm-2 col-form-label">Toppings</label>
-                                    <div class="col-sm-10">
-                                        <input type="checkbox" name="toppings" value="ham"> Ham
-                                        <input type="checkbox" name="toppings" value="bell-peppers"> Bell-Peppers
-                                        <input type="checkbox" name="toppings" value="pineapples"> Pineapple 
-                                        <input type="checkbox" name="toppings" value="Chicken"> Chicken<br>
-                                        <input type="checkbox" name="toppings" value="Steak"> Steak
-                                        <input type="checkbox" name="toppings" value="pineapples"> Pineapple 
-                                        <input type="checkbox" name="toppings" value="Cherry"> Cherry Tomatoes<br>
-                                        <input type="checkbox" name="toppings" value="Sausages"> Sausages
-                                        <input type="checkbox" name="toppings" value="Olives"> Black Olives 
-                                        <input type="checkbox" name="toppings" value="Brocoli"> Brocoli<br>
-                                        <input type="checkbox" name="toppings" value="Cauli"> Cauliflower
-                                        <input type="checkbox" name="toppings" value="Mushroom"> Mushroom 
-                                        <input type="checkbox" name="toppings" value="Onions"> Caramell Onions<br>
-                                        <input type="checkbox" name="toppings" value="Cheese"> Extra Cheese
-                                        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni 
-                                    </div>
-                                  </div>
-
-                                        
-                                        
-                                      <fieldset class="form-group" id="services">
-                                            <div class="row">
-                                              <legend class="col-form-label col-sm-2 pt-0">Service</legend>
-                                              <div class="col-sm-10">
-                                                <div class="form-check">
-                                                  <input class="form-check-input" type="radio" name="Radios" id="Delivery" value="Delivery" checked>
-                                                  <label class="form-check-label" for="RadiosA">
-                                                    Delivery
-                                                  </label>
-                                                </div>
-                                                <div class="form-check">
-                                                  <input class="form-check-input" type="radio" name="Radios" id="Pick-Up" value="Pick-Up">
-                                                  <label class="form-check-label" for="RadiosB">
-                                                    Pick-Up
-                                                  </label>
-                                                </div>
-                                                
-                                              </div>
-                                            </div>
-                                          </fieldset>
-                                          <div class="form-inline">
-                                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Location</label>
-                                                <select class="custom-select my-1 mr-md-8" id="location">
-                                                  <option selected>Choose...</option>
-                                                  <option value="withinNairobi">Within Nairobi</option>
-                                                  <option value="nairobiOutcasts">Nairobi Outcasts</option>
-                                                  
-                                                </select>
-                                            </div>
-                                  
-                                 
-                                  <div class="form-group row">
-                                    <div class="col-sm-10">
-                                      <button type="submit" id= "button" class="btn btn-primary" onclick="">Submit</button>
-                
-                                    </div>
-                                  </div>
-
-                    </form>
+                    <p><strong>DELIVERY PRICES</strong></p>
+                    <ul>
+                      <li>Within Nairobi:  Ksh.250</li>
+                      <li>Nairobi Outcasts: Ksh.500</li>
+                    </ul>
                 </div>
              </div>
         </div>
