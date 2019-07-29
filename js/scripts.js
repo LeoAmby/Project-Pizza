@@ -19,14 +19,74 @@ $(document).ready(function(){
         var pizzaFlavor = $("#flavors").val();
         var pizzaNumber = $("#numberOfPizza").val();
         var pizzaCrust  = $("input[name='gridRadios']:checked").val();
+        var services = $("input[name='Radios']:checked").val();
+        var location = $("#location").val();
         var pizzaToppings = [];
         $.each($('input:checkbox[name="toppings"]:checked'),function(){
             pizzaToppings.push($(this).val());
                     });
-        var services = $("input[name='Radios']:checked").val();
-        var location = $("#location").val();
-        console.log(location);
+        var toppingsPrice = 0;
+        if (pizzaSize === 'mega'){
+            toppingsPrice = 250;
+        } else if (pizzaSize === 'large'){
+            toppingsPrice = 200;
+        } else if (pizzaSize === 'medium'){
+            toppingsPrice = 150;
+        } else (pizzaSize === 'small'){
+            toppingsPrice = 100;
+        }
 
+        var crustPrice = 0;
+        if (pizzaSize == 'mega' && pizzaCrust == 'crispy'){
+            crustPrice =250;
+        } else if (pizzaSize == 'large' && pizzaCrust == 'crispy'){
+            crustPrice = 250;
+        } else if (pizzaSize == 'medium' && pizzaCrust == 'crispy'){
+            crustPrice = 200;
+        } else if (pizzaSize == 'small' && pizzaCrust == 'crispy'){
+            crustPrice = 150;
+        }else if (pizzaSize == 'mega' && pizzaCrust == 'stuffed'){
+            crustPrice = 400;
+        } else if (pizzaSize == 'large' && pizzaCrust == 'stuffed'){
+            crustPrice = 350;
+        } else if (pizzaSize == 'medium' && pizzaCrust == 'stuffed'){
+            crustPrice = 300;
+        } else if (pizzaSize == 'small' && pizzaCrust == 'stuffed'){
+            crustPrice = 250;
+        } else if (pizzaSize == 'mega' && pizzaCrust == 'glutten-free'){
+            crustPrice = 300;
+        } else if (pizzaSize == 'large' && pizzaCrust == 'glutten-free'){
+            crustPrice = 250;
+        } else if (pizzaSize == 'medium' && pizzaCrust == 'glutten-free'){
+            crustPrice = 200;
+        } else if (pizzaSize == 'mega' && pizzaCrust == 'glutten-free'){
+            crustPrice = 150;
+        } 
+ 
+        var sizePrice = 0;
+        if (pizzaSize == 'mega'){
+            sizePrice = 1200;
+        } else if (pizzaSize == 'large'){
+            sizePrice = 1000;
+        } else if (pizzaSize == 'medium'){
+            sizePrice = 800;
+        } else  (pizzaSize == 'large'){
+            sizePrice = 550;
+        }
+
+        var deliveryPrice = 0;
+        if(location == 'withinNairobi'){
+            deliveryPrice = 250;
+        } else if (location == 'nairobiOutcasts'){
+            deliveryPrice = 500;
+        }else deliveryPrice = 0;
+  
+ 
+var cost;
+function totalCost(){
+    var cost = ('sizePrice' + 'crustPrice' + 'toppingsPrice' + 'delivery')
+
+}
     })
 })
 //business logic
