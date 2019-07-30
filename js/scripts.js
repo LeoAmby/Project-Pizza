@@ -90,7 +90,7 @@ $(document).ready(function(){
         cost = (sizePrice + crustPrice + toppingsPrice + deliveryPrice)*noOfPizza;
     }
     totalCost();
-    alert("Thank you "+ name + " for your order." + " You have ordered " +pizzaNumber +" " + pizzaSize +" "+ pizzaFlavor +" pizza with a "+ pizzaCrust + " crust and your total cost is " + cost );
+    alert("Thank you "+ name + " for your order." + " You have ordered " +pizzaNumber +" " + pizzaSize +" "+ pizzaFlavor +" pizza with a "+ pizzaCrust + " crust."+ "Your toppings choice include "+pizzaToppings + ". The total cost of your order is Ksh."+ cost );
     })
 })
 //business logic
