@@ -1,7 +1,9 @@
 body {
     color:rgb(54, 49, 49);
 }
-
+/* *{
+    overflow-x: hidden;
+} */
 .container-fluid {
     background-image: url("../images/clo.jpg");
     background-size: cover;
@@ -142,9 +144,12 @@ form, p {
         width:100px;
          height:50px;
     }
+    #table {
+        width: 100px;
+    }
 
 }
-@media screen(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)and (device-          width: 1440px)and (orientation: portrait){
+@media only screen and(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)and (min-width: 1440px)and (orientation: portrait){
     #logo{
         height: 50px;
     }
